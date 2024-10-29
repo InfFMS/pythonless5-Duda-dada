@@ -4,3 +4,11 @@
 # Пример: ввод N = 6
 # [20, -90, 15, -34, 10, 0]
 # Вывод: [20, 15, 10, -90, -34, 0]
+N=int(input())
+from random import randint
+A=[0]*N
+for i in range(N):
+    A[i]=randint(-100,100)
+print(A)
+A=sorted(A)[::-1]
+print(A)

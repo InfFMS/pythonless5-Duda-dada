@@ -7,3 +7,10 @@
 # [1, 2, 3, 2, 5, 10]
 # Вывод:
 # значение:2 индексы 1 и 3
+N=int(input())
+from random import randint
+A=[0]*N
+for i in range(N):
+    A[i]=randint(0,100)
+print(A)
+    if
