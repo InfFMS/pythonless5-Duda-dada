@@ -4,3 +4,11 @@
 # Пример: ввод N = 6
 # [1,2,3,4,5,6]
 # Вывод: [3,2,1,6,5,4]
+N=int(input())
+from random import randint
+A=[0]*N
+for i in range(N):
+    A[i]=randint(0,10)
+print(A)
+A=A[N//2 -1::-1]+A[:N//2-1:-1]
+print(A)
